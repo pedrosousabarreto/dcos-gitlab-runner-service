@@ -84,13 +84,13 @@ export RUNNER_NAME=${MESOS_TASK_ID}
 export REGISTER_NON_INTERACTIVE=true
 
 # Set the RUNNER_BUILDS_DIR
-export RUNNER_BUILDS_DIR=${MESOS_SANDBOX}/builds
+export RUNNER_BUILDS_DIR=/opt/builds
 
 # Set the RUNNER_CACHE_DIR
-export RUNNER_CACHE_DIR=${MESOS_SANDBOX}/cache
+export RUNNER_CACHE_DIR=/opt/cache
 
 # Set the RUNNER_WORK_DIR
-export RUNNER_WORK_DIR=${MESOS_SANDBOX}/work
+export RUNNER_WORK_DIR=/opt/work
 
 # Create directories
 mkdir -p $RUNNER_BUILDS_DIR $RUNNER_CACHE_DIR $RUNNER_WORK_DIR
