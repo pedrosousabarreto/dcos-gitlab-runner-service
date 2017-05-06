@@ -39,6 +39,10 @@ RUN apt-get update -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+# install node 7
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
+    && apt-get install -y nodejs
+
 # Add wrapper script
 ADD register_and_run.sh /
 
